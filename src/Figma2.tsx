@@ -1,59 +1,3 @@
-//SEHIFE1
-
-
-
-/*import React from "react";
-import { Text,Image, View,StyleSheet } from "react-native";
-
-const App=()=>{
-    return(
-        <View>
-            <Text style={styles.text}>
-            ENJOY FRIED RICE-
-            THE BEST MEAL
-            </Text>
-            <Image  style ={styles.photo}
-             source={require('./buton.png')}/>
-             <Image  style={styles.newphoto} 
-            source ={require('./2plov.png')} />
-            
-            </View>
-    )
-}
-const styles=StyleSheet.create({
-    text:{
-        fontSize:47,
-        lineHeight:50,
-        width:337,
-        height:200,
-        top:110,
-        left:18,
-        color:'black'
-    },
-    photo:{
-        marginTop:90,
-        marginLeft:300
-    
-    },
-    newphoto:{
-        marginTop:-120,
-        marginLeft:5
-    }
-}
-
-)
-export default App;*/
-
-
-
-
-
-
-//SEHFE2
-
-
-
-
 import React from "react";
 import { Text,Image, View,StyleSheet, TouchableOpacity } from "react-native";
 
@@ -61,11 +5,15 @@ const App=()=>{
     return(
         <View>
             <Image  style ={styles.photo}
-                source={require('./Menu1.png')}/>
-            <Image  style ={styles.newphoto}
-                source={require('./canta.png')}/>
-            <Image  style ={styles.new1photo}
-                source={require('./lupa.png')}/>
+                    source={require('./Menu1.png')}/>
+            <TouchableOpacity style={styles.lupabutton}>
+            <Image  style ={styles.lupaphoto}
+                    source={require('./lupa.png')}/>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.cantabutton}>
+            <Image  style ={styles.cantaphoto}
+                    source={require('./canta.png')}/>
+            </TouchableOpacity>
             <Text style={styles.text}>
                 DELICIOUS FOOD
             </Text>
@@ -161,23 +109,22 @@ const App=()=>{
     )
 }
 
-
-
-
-
 const styles=StyleSheet.create({
     photo:{
         marginLeft:20,
         marginTop:20
     },
-    newphoto:{
+    cantabutton:{
         marginLeft:360,
         marginTop:-19
     },
-    new1photo:{
+    lupabutton:{
         marginLeft:320,
         marginTop:-18
     },
+
+
+
     text:{
         color:'black',
         marginLeft:20,
@@ -296,4 +243,3 @@ const styles=StyleSheet.create({
 })
     export default App;
 
-    
